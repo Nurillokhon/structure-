@@ -13,7 +13,7 @@ const AuthProvider: React.FC<ProviderI> = ({ children }) => {
 
   useEffect(() => {
     if (!token) {
-      navigate("login");
+      navigate("/login");
     } else {
       setIsLoading(false);
     }
